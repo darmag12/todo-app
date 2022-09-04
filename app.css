@@ -64,3 +64,152 @@ input:focus {
   font-size: 0.8rem;
   margin: 10px 0 2px 0;
 }
+
+/* Todo Container */
+.todo__container {
+  grid-column: 2 / 12;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background-color: var(--secondary-color);
+  /* padding: 50px 20px; */
+}
+
+/* Category styles */
+.todo__category {
+  display: grid;
+  align-items: center;
+  color: var(--text-color);
+  background-color: var(--tertiary-color);
+  width: 100%;
+  height: 100%;
+  padding: 50px 20px;
+}
+
+.todo__category .category__footer {
+  margin-top: 50px;
+}
+
+.todo__category .date {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.todo__category .category__count {
+  font-size: 0.9rem;
+}
+
+.todo__category div h3 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #fff;
+}
+
+.todo__category .category__add {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Todo Lists Container */
+.todo__categoryList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+
+.categoryList__item {
+  padding: 10px;
+  border: 2px solid var(--tertiary-color);
+}
+
+.categoryList__item h4 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.05rem;
+  color: var(--text-color);
+  margin: 5px;
+}
+
+.categoryList__item h4 span strong {
+  text-transform: capitalize !important;
+}
+
+.categoryList__item h4 span i {
+  margin-left: 3px;
+  cursor: pointer;
+  text-transform: lowercase !important;
+}
+
+.categoryList__close {
+  color: var(--text-color);
+  margin: -10px 0 10px 0;
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+/* Todo Item Start */
+.categoryList__item .todo {
+  color: var(--text-color);
+  padding: 10px;
+  margin: 10px 0;
+  border: 0.5px solid var(--primary-color);
+}
+
+.categoryList__item .todo .todo__task {
+  font-size: 1rem;
+  color: #fff;
+  /* text-decoration: line-through; */
+}
+
+.todo__task strong {
+  font-size: 1rem !important;
+  font-weight: 400;
+}
+
+.categoryList__item .todo p .icon__complete {
+  color: #06ee06;
+  margin-right: 5px;
+  font-size: 1.1rem;
+  /* color: #dd0000; */
+  cursor: pointer;
+}
+
+.categoryList__item .todo__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoryList__item .todo__meta .todo__author {
+  font-size: 0.85rem;
+  color: var(--text-color);
+}
+
+.categoryList__item .todo__btnContainer button {
+  font-size: 1rem;
+  border: 0;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 5px 3px;
+  cursor: pointer;
+}
+
+.todo__btnContainer .edit {
+  background-color: #06ee06;
+  transition: var(--ease);
+}
+
+.todo__btnContainer .edit:hover {
+  background-color: #009900;
+}
+
+.todo__btnContainer .delete {
+  background-color: #940000;
+  transition: var(--ease);
+}
+.todo__btnContainer .delete:hover {
+  background-color: #ff3a3a;
+}
