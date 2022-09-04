@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100;1,400;1,500;1,600;1,700&family=Rubik+Glitch&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/664f415367.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./app.css" />
+    <title>TODO APP</title>
+  </head>
+  <body>
+    <div class="todo__container">
+      <!-- Todo Category -->
+      <div class="todo__category">
+        <header>
+          <h2 class="date" data-date></h2>
+          <p class="category__count"><span data-categoryCount>3</span> Tasks</p>
+          <div class="category__footer">
+            <h3>Create a Todo Category</h3>
+            <label for="" class="label category__label">Category</label>
+            <br />
+            <input
+              data-catInput
+              type="text"
+              class="category__input"
+              placeholder="Education, Health.."
+              required
+            />
+            <button class="btn category__add" data-addCategory>
+              Add Category
+            </button>
+          </div>
+        </header>
+      </div>
+      <!-- End of Todo Category -->
+      <!-- Todo Category List -->
+      <div class="todo__categoryList" data-categoryList>
+        <!-- Category Lists go Here!! -->
+        <!-- Beginning of todos 001-->
+        <!-- <div class="todo" data-todos>
+          <p class="todo__task">
+                  <span class="icon__complete">O</span> Going to the gym
+                 </p>
+                 <div class="todo__meta">
+                 <p class="todo__author">Daryl</p>
+                 <span class="todo__btnContainer">
+                    <button class="btn edit">
+                       <i class="fa-solid fa-pen-to-square"></i> Edit
+                     </button>
+                     <button class="btn delete">
+                       <i class="fa-solid fa-delete-left"></i> Delete
+                     </button>
+                   </span>
+                 </div>
+        </div> -->
+        <!-- End of todos 001-->
+      </div>
+      <!-- End of Todo Category List -->
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
