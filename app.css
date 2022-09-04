@@ -1,0 +1,66 @@
+/* Basic Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Colors */
+:root {
+  --primary-color: #ffe6a7;
+  --secondary-color: #0e0b11;
+  --tertiary-color: #1a171d;
+  --text-color: #d2cfcf;
+  --input-color: #b8b8b8;
+  --ease: all 0.4s ease-in-out;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 100vh;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+/* Button styles */
+.btn {
+  font-size: 1.05rem;
+  border: 0;
+  border-radius: 2px;
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/* Input styles */
+input {
+  padding: 12px 15px;
+  background-color: #f7f7f726;
+  font-family: inherit;
+  border: none;
+  border-radius: 2px;
+  color: var(--input-color);
+  margin: 5px 0 10px 0;
+  transition: var(--ease);
+  width: 100%;
+}
+
+input:focus {
+  transition: var(--ease);
+  background-color: var(--input-color);
+  color: var(--secondary-color);
+}
+
+/* Label styles */
+.label {
+  display: inline-block;
+  color: #d2cfcf;
+  font-family: inherit;
+  font-size: 0.8rem;
+  margin: 10px 0 2px 0;
+}
